@@ -15,7 +15,7 @@ class Appointment extends Model {
     return this;
   }
 
-  static associoate(models) {
+  static associate(models) {
     // quanto uma tabela possui dois relacionamentos
     // o apelido `as` passar a ser obrigatório
     this.belongsTo(models.User, { foreignKey: 'user_id', as: 'user' });
